@@ -16,6 +16,7 @@ namespace ColdWarScript
         public static bool enable;
         public static string weapon;
         public static int smooth;
+        public static int clickInterval;
 
         public xloat()
         {
@@ -40,10 +41,17 @@ namespace ColdWarScript
             smooth = smoothSlider.Value;
             smoothValue.Text = smoothSlider.Value.ToString();
         }
+        private void autoClickInterval_Scroll_1(object sender, EventArgs e)
+        {
+            clickInterval = autoClickInterval.Value;
+            autoClickIntervalValue.Text = autoClickInterval.Value.ToString();
+        }
+
         private void xloat_FormClosing(object sender, FormClosingEventArgs e)
         {
             Environment.Exit(0);
         }
+
 
     }
 

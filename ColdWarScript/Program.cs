@@ -39,8 +39,9 @@ namespace ColdWarScript
 
         static void Recoil()
         {
-            while (true)
+            while(true)
             {
+
                 if (xloat.enable && Mouse.IsKeyDown(Keys.LButton) && Mouse.IsKeyDown(Keys.RButton))
                 {
                     try
@@ -50,6 +51,12 @@ namespace ColdWarScript
                     }
                     catch
                     {}
+                }
+
+                else if(Mouse.IsKeyDown(Keys.XButton2))
+                {
+                    Mouse.MousePress();
+                    Thread.Sleep(xloat.clickInterval);
                 }
             }
         }

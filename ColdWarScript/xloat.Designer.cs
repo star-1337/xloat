@@ -41,7 +41,12 @@ namespace ColdWarScript
             this.border2 = new System.Windows.Forms.Label();
             this.border3 = new System.Windows.Forms.Label();
             this.versionLabel = new System.Windows.Forms.Label();
+            this.autoClickLabel = new System.Windows.Forms.Label();
+            this.autoClickInterval = new System.Windows.Forms.TrackBar();
+            this.autoClickIntervalValue = new System.Windows.Forms.Label();
+            this.msLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.smoothSlider)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.autoClickInterval)).BeginInit();
             this.SuspendLayout();
             // 
             // enableCheckBox
@@ -49,7 +54,7 @@ namespace ColdWarScript
             this.enableCheckBox.AutoSize = true;
             this.enableCheckBox.BackColor = System.Drawing.Color.Transparent;
             this.enableCheckBox.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.enableCheckBox.Location = new System.Drawing.Point(168, 14);
+            this.enableCheckBox.Location = new System.Drawing.Point(180, 16);
             this.enableCheckBox.Name = "enableCheckBox";
             this.enableCheckBox.Size = new System.Drawing.Size(15, 14);
             this.enableCheckBox.TabIndex = 0;
@@ -66,8 +71,9 @@ namespace ColdWarScript
             "Krig",
             "LC10",
             "XM4",
-            "AK47U"});
-            this.weaponCombo.Location = new System.Drawing.Point(168, 47);
+            "AK47U",
+            "_EMPTY_"});
+            this.weaponCombo.Location = new System.Drawing.Point(180, 45);
             this.weaponCombo.Name = "weaponCombo";
             this.weaponCombo.Size = new System.Drawing.Size(121, 25);
             this.weaponCombo.TabIndex = 1;
@@ -77,7 +83,7 @@ namespace ColdWarScript
             // 
             this.weaponLabel.AutoSize = true;
             this.weaponLabel.BackColor = System.Drawing.Color.Transparent;
-            this.weaponLabel.Location = new System.Drawing.Point(26, 52);
+            this.weaponLabel.Location = new System.Drawing.Point(30, 50);
             this.weaponLabel.Name = "weaponLabel";
             this.weaponLabel.Size = new System.Drawing.Size(137, 17);
             this.weaponLabel.TabIndex = 2;
@@ -86,7 +92,7 @@ namespace ColdWarScript
             // smoothSlider
             // 
             this.smoothSlider.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.smoothSlider.Location = new System.Drawing.Point(168, 84);
+            this.smoothSlider.Location = new System.Drawing.Point(175, 84);
             this.smoothSlider.Maximum = 5;
             this.smoothSlider.Minimum = 1;
             this.smoothSlider.Name = "smoothSlider";
@@ -101,7 +107,7 @@ namespace ColdWarScript
             // 
             this.smoothLabel.AutoSize = true;
             this.smoothLabel.BackColor = System.Drawing.Color.Transparent;
-            this.smoothLabel.Location = new System.Drawing.Point(26, 96);
+            this.smoothLabel.Location = new System.Drawing.Point(30, 90);
             this.smoothLabel.Name = "smoothLabel";
             this.smoothLabel.Size = new System.Drawing.Size(91, 17);
             this.smoothLabel.TabIndex = 4;
@@ -122,7 +128,7 @@ namespace ColdWarScript
             // 
             this.enableLabel.AutoSize = true;
             this.enableLabel.BackColor = System.Drawing.Color.Transparent;
-            this.enableLabel.Location = new System.Drawing.Point(29, 12);
+            this.enableLabel.Location = new System.Drawing.Point(30, 10);
             this.enableLabel.Name = "enableLabel";
             this.enableLabel.Size = new System.Drawing.Size(56, 17);
             this.enableLabel.TabIndex = 6;
@@ -133,7 +139,7 @@ namespace ColdWarScript
             this.border1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.border1.Location = new System.Drawing.Point(29, 81);
             this.border1.Name = "border1";
-            this.border1.Size = new System.Drawing.Size(260, 2);
+            this.border1.Size = new System.Drawing.Size(300, 2);
             this.border1.TabIndex = 7;
             this.border1.Text = "                  ";
             // 
@@ -142,7 +148,7 @@ namespace ColdWarScript
             this.border2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.border2.Location = new System.Drawing.Point(29, 37);
             this.border2.Name = "border2";
-            this.border2.Size = new System.Drawing.Size(260, 2);
+            this.border2.Size = new System.Drawing.Size(300, 2);
             this.border2.TabIndex = 8;
             this.border2.Text = "                  ";
             // 
@@ -152,7 +158,7 @@ namespace ColdWarScript
             this.border3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.border3.Location = new System.Drawing.Point(29, 128);
             this.border3.Name = "border3";
-            this.border3.Size = new System.Drawing.Size(260, 2);
+            this.border3.Size = new System.Drawing.Size(300, 2);
             this.border3.TabIndex = 9;
             this.border3.Text = "                  ";
             // 
@@ -160,18 +166,67 @@ namespace ColdWarScript
             // 
             this.versionLabel.AutoSize = true;
             this.versionLabel.Font = new System.Drawing.Font("Smallest Pixel-7", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.versionLabel.Location = new System.Drawing.Point(287, 138);
+            this.versionLabel.Location = new System.Drawing.Point(290, 180);
             this.versionLabel.Name = "versionLabel";
-            this.versionLabel.Size = new System.Drawing.Size(75, 14);
+            this.versionLabel.Size = new System.Drawing.Size(77, 14);
             this.versionLabel.TabIndex = 10;
-            this.versionLabel.Text = "Version: 1.1";
+            this.versionLabel.Text = "Version: 1.2";
+            // 
+            // autoClickLabel
+            // 
+            this.autoClickLabel.AutoSize = true;
+            this.autoClickLabel.BackColor = System.Drawing.Color.Transparent;
+            this.autoClickLabel.Location = new System.Drawing.Point(30, 141);
+            this.autoClickLabel.Name = "autoClickLabel";
+            this.autoClickLabel.Size = new System.Drawing.Size(145, 17);
+            this.autoClickLabel.TabIndex = 11;
+            this.autoClickLabel.Text = "AutoClick Interval:";
+            // 
+            // autoClickInterval
+            // 
+            this.autoClickInterval.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.autoClickInterval.Location = new System.Drawing.Point(175, 133);
+            this.autoClickInterval.Maximum = 400;
+            this.autoClickInterval.Minimum = 1;
+            this.autoClickInterval.Name = "autoClickInterval";
+            this.autoClickInterval.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.autoClickInterval.Size = new System.Drawing.Size(121, 45);
+            this.autoClickInterval.SmallChange = 100;
+            this.autoClickInterval.TabIndex = 100;
+            this.autoClickInterval.TickStyle = System.Windows.Forms.TickStyle.TopLeft;
+            this.autoClickInterval.Value = 1;
+            this.autoClickInterval.Scroll += new System.EventHandler(this.autoClickInterval_Scroll_1);
+            // 
+            // autoClickIntervalValue
+            // 
+            this.autoClickIntervalValue.AccessibleName = "autoClickIntervalValue";
+            this.autoClickIntervalValue.AutoSize = true;
+            this.autoClickIntervalValue.BackColor = System.Drawing.Color.Transparent;
+            this.autoClickIntervalValue.Location = new System.Drawing.Point(297, 141);
+            this.autoClickIntervalValue.Name = "autoClickIntervalValue";
+            this.autoClickIntervalValue.Size = new System.Drawing.Size(14, 17);
+            this.autoClickIntervalValue.TabIndex = 13;
+            this.autoClickIntervalValue.Text = "1";
+            // 
+            // msLabel
+            // 
+            this.msLabel.AccessibleName = "msLabel";
+            this.msLabel.AutoSize = true;
+            this.msLabel.BackColor = System.Drawing.Color.Transparent;
+            this.msLabel.Location = new System.Drawing.Point(326, 141);
+            this.msLabel.Name = "msLabel";
+            this.msLabel.Size = new System.Drawing.Size(26, 17);
+            this.msLabel.TabIndex = 101;
+            this.msLabel.Text = "ms";
             // 
             // xloat
             // 
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.xloat_FormClosing);
             this.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.ClientSize = new System.Drawing.Size(370, 159);
-            this.Controls.Add(this.versionLabel);
+            this.ClientSize = new System.Drawing.Size(384, 211);
+            this.Controls.Add(this.msLabel);
+            this.Controls.Add(this.autoClickIntervalValue);
+            this.Controls.Add(this.autoClickInterval);
+            this.Controls.Add(this.autoClickLabel);
             this.Controls.Add(this.versionLabel);
             this.Controls.Add(this.border3);
             this.Controls.Add(this.border2);
@@ -191,7 +246,9 @@ namespace ColdWarScript
             this.MaximizeBox = false;
             this.Name = "xloat";
             this.Text = "ColdWar Recoil Assist";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.xloat_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.smoothSlider)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.autoClickInterval)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -213,6 +270,10 @@ namespace ColdWarScript
         private System.Windows.Forms.Label border2;
         private System.Windows.Forms.Label border3;
         private System.Windows.Forms.Label versionLabel;
+        private System.Windows.Forms.Label autoClickLabel;
+        private System.Windows.Forms.TrackBar autoClickInterval;
+        private System.Windows.Forms.Label autoClickIntervalValue;
+        private System.Windows.Forms.Label msLabel;
 
         public object Style { get; private set; }
     }
