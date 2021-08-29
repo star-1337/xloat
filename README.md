@@ -1,3 +1,3 @@
 Screenshots:
-https://prnt.sc/1qr643h
-https://prnt.sc/1qr65fk
+![](Screenshots/menu.png)
+![](Screenshots/menu1.png)
