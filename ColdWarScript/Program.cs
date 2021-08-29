@@ -19,7 +19,7 @@ namespace ColdWarScript
             recoilThread.Start();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new xloat());
 
         }
 
@@ -41,12 +41,12 @@ namespace ColdWarScript
         {
             while (true)
             {
-                if (Form1.enable && Mouse.IsKeyDown(Keys.LButton) && Mouse.IsKeyDown(Keys.RButton))
+                if (xloat.enable && Mouse.IsKeyDown(Keys.LButton) && Mouse.IsKeyDown(Keys.RButton))
                 {
                     try
                     {
-                        Mouse.RelativeMove(RecoilAmount(Form1.weapon)[1], Convert.ToInt32(RecoilAmount(Form1.weapon)[0] / Form1.smooth));
-                        Thread.Sleep(RecoilAmount(Form1.weapon)[2]);
+                        Mouse.RelativeMove(RecoilAmount(xloat.weapon)[1], Convert.ToInt32(RecoilAmount(xloat.weapon)[0] / xloat.smooth));
+                        Thread.Sleep(RecoilAmount(xloat.weapon)[2]);
                     }
                     catch
                     {}

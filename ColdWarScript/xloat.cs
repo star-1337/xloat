@@ -11,13 +11,13 @@ using System.Windows.Forms;
 namespace ColdWarScript
 {
 
-    public partial class Form1 : Form
+    public partial class xloat : Form
     {
         public static bool enable;
         public static string weapon;
         public static int smooth;
 
-        public Form1()
+        public xloat()
         {
             InitializeComponent();
         }

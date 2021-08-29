@@ -1,7 +1,7 @@
 ﻿
 namespace ColdWarScript
 {
-    partial class Form1
+    partial class xloat
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace ColdWarScript
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(xloat));
             this.enableCheckBox = new System.Windows.Forms.CheckBox();
             this.weaponCombo = new System.Windows.Forms.ComboBox();
             this.weaponLabel = new System.Windows.Forms.Label();
@@ -166,7 +166,7 @@ namespace ColdWarScript
             this.versionLabel.TabIndex = 10;
             this.versionLabel.Text = "Version: 1.1";
             // 
-            // Form1
+            // xloat
             // 
             this.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.ClientSize = new System.Drawing.Size(370, 159);
@@ -188,7 +188,7 @@ namespace ColdWarScript
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "Form1";
+            this.Name = "xloat";
             this.Text = "ColdWar Recoil Assist";
             ((System.ComponentModel.ISupportInitialize)(this.smoothSlider)).EndInit();
             this.ResumeLayout(false);
