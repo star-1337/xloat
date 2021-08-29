@@ -1,6 +1,6 @@
 Screenshots:
 
 
-![](Screenshots/menu.png)
+![](Screenshots/Screenshot.png)
 
-![](Screenshots/menu1.png)
+![](Screenshots/Screenshot1.png)
