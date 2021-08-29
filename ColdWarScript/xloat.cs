@@ -40,6 +40,10 @@ namespace ColdWarScript
             smooth = smoothSlider.Value;
             smoothValue.Text = smoothSlider.Value.ToString();
         }
+        private void xloat_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Environment.Exit(0);
+        }
 
     }
 

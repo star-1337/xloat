@@ -168,6 +168,7 @@ namespace ColdWarScript
             // 
             // xloat
             // 
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.xloat_FormClosing);
             this.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.ClientSize = new System.Drawing.Size(370, 159);
             this.Controls.Add(this.versionLabel);
