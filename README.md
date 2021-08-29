@@ -1,3 +1,9 @@
+A simple Windows Form UI which uses mouseevents to aid recoil compensation in Call of Duty Cold-War.
+
 Screenshots:
-https://prnt.sc/1qr643h
-https://prnt.sc/1qr65fk
+
+![](Screenshots/Screenshot.png)
+
+![](Screenshots/Screenshot1.png)
+
+
