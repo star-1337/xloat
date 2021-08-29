@@ -1,0 +1,10 @@
+C:\Users\dropz\source\repos\ColdWarScript\ColdWarScript\bin\Debug\ColdWarScript.exe.config
+C:\Users\dropz\source\repos\ColdWarScript\ColdWarScript\bin\Debug\ColdWarScript.exe
+C:\Users\dropz\source\repos\ColdWarScript\ColdWarScript\bin\Debug\ColdWarScript.pdb
+C:\Users\dropz\source\repos\ColdWarScript\ColdWarScript\obj\Debug\ColdWarScript.csprojAssemblyReference.cache
+C:\Users\dropz\source\repos\ColdWarScript\ColdWarScript\obj\Debug\ColdWarScript.Form1.resources
+C:\Users\dropz\source\repos\ColdWarScript\ColdWarScript\obj\Debug\ColdWarScript.Properties.Resources.resources
+C:\Users\dropz\source\repos\ColdWarScript\ColdWarScript\obj\Debug\ColdWarScript.csproj.GenerateResource.cache
+C:\Users\dropz\source\repos\ColdWarScript\ColdWarScript\obj\Debug\ColdWarScript.csproj.CoreCompileInputs.cache
+C:\Users\dropz\source\repos\ColdWarScript\ColdWarScript\obj\Debug\ColdWarScript.exe
+C:\Users\dropz\source\repos\ColdWarScript\ColdWarScript\obj\Debug\ColdWarScript.pdb
